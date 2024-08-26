@@ -1,0 +1,7 @@
+package com.dreszer.jjd.Folder.Interfaces;
+
+import java.util.List;
+
+public interface MultiFolder extends Folder {
+    List<Folder> getFolders();
+}
