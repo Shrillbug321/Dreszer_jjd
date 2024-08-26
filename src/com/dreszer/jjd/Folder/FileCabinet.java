@@ -37,10 +37,10 @@ public class FileCabinet implements Cabinet {
     }
 
     /**
-     * Generyczna metoda iterująca po blokach. W zależności od typu bloku wykonuje odpowiednią przekazaną metodę.
+     * Generyczna metoda iterująca po folderach. W zależności od typu folderu wykonuje odpowiednią przekazaną metodę.
      * @param folderMethod metoda do wykonania dla prostego folderu
      * @param multiFolderMethod metoda dla złożonego folderu
-     * @return lista bloków spełniających warunki określone w przekazanych metodach
+     * @return lista folderów spełniających warunki określone w przekazanych metodach
      */
     private <T> List<T> folderIterate(MultiFolderMethod<T> multiFolderMethod, FolderMethod<T> folderMethod) {
         List<T> result = new ArrayList<>();
